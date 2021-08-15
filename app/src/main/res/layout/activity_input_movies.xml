@@ -59,20 +59,24 @@
         android:layout_marginTop="150dp"
         android:hint="@string/Result"
         android:textStyle="bold"
+        android:textSize="35dp"
+        android:textColor="@color/black"
         android:id="@+id/resultString"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText4" />
 
     <Button
+        android:id="@+id/goRandomString"
         android:layout_width="150dp"
         android:layout_height="75dp"
         android:layout_marginStart="125dp"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="24dp"
         android:hint="@string/RandomStringButton"
-        android:textStyle="bold"
-        android:id="@+id/goRandomString"
         android:onClick="OnClickGoChooseRandomString"
+        android:textColorHint="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/resultString"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText4" />

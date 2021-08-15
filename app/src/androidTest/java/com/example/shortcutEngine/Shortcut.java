@@ -32,7 +32,7 @@ import static com.example.shortcutEngine.WaitFunction.waitId;
 import java.util.concurrent.TimeUnit;
 
 public class Shortcut implements ShortcutGenerator{
-    private static final long WAIT = 1000;
+    private static final long WAIT = 500;
 
 
 
