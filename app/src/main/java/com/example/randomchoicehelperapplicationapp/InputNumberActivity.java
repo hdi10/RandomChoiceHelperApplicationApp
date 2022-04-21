@@ -8,10 +8,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.example.randomchoicehelperapplicationapp.RandomClass.RandomChoice;
-import com.example.randomchoicehelperapplicationapp.RandomClass.RandomChoiceGenerator;
+import com.example.randomchoicehelperapplicationapp.randomclass.RandomChoice;
+import com.example.randomchoicehelperapplicationapp.randomclass.RandomChoiceGenerator;
 
-public class InputNumber extends AppCompatActivity {
+public class InputNumberActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +46,7 @@ public class InputNumber extends AppCompatActivity {
         intArr[3] = Integer.parseInt(field4.getText().toString());
 
         int randomInt = machine.chooseRandomNumber2(intArr);
+        field4.setShowSoftInputOnFocus(false);  //hinzugefügt softkeyboard handling
         textView.setText(String.valueOf(randomInt));
     }
 }

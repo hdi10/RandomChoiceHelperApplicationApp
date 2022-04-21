@@ -1,8 +1,4 @@
-package com.example.randomchoicehelperapplicationapp.RandomClass;
-
-import android.widget.TextView;
-
-import com.example.randomchoicehelperapplicationapp.R;
+package com.example.randomchoicehelperapplicationapp.randomclass;
 
 import java.util.List;
 import java.util.Random;

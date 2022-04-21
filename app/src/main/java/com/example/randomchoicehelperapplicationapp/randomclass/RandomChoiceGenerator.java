@@ -1,4 +1,4 @@
-package com.example.randomchoicehelperapplicationapp.RandomClass;
+package com.example.randomchoicehelperapplicationapp.randomclass;
 
 import java.util.List;
 

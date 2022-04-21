@@ -1,13 +1,12 @@
 package com.example.randomchoicehelperapplicationapp;
 
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-import com.example.randomchoicehelperapplicationapp.RandomClass.RandomChoice;
-import com.example.randomchoicehelperapplicationapp.RandomClass.RandomChoiceGenerator;
+import com.example.randomchoicehelperapplicationapp.randomclass.RandomChoice;
+import com.example.randomchoicehelperapplicationapp.randomclass.RandomChoiceGenerator;
 
 import java.util.Arrays;
 import java.util.List;

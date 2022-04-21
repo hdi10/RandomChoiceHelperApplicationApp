@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RandomChoiceHelperApplicationApp">
         <activity
-            android:name=".InputMovies"
+            android:name=".ChooseChoiceCountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InputMoviesActivity"
             android:exported="true" />
         <activity
-            android:name=".InputNumber"
+            android:name=".InputNumberActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

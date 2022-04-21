@@ -3,9 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_choose_choice_count.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_input_movies.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_input_number.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/layout/empty_tall_divider.xml" value="0.19166666666666668" />
       </map>
     </option>
   </component>

@@ -6,12 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.randomchoicehelperapplicationapp.RandomClass.RandomChoice;
-import com.example.randomchoicehelperapplicationapp.RandomClass.RandomChoiceGenerator;
+import com.example.randomchoicehelperapplicationapp.randomclass.RandomChoice;
+import com.example.randomchoicehelperapplicationapp.randomclass.RandomChoiceGenerator;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
     public void OnClickGenerateRandomInteger(View view) {
         RandomChoiceGenerator machine = new RandomChoice();
         TextView textView = (TextView) findViewById(R.id.outputRandomNumber);
@@ -54,12 +54,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void OnClickChooseRandomNumber(View view) {
-        Intent i = new Intent(this,InputNumber.class);
+        Intent i = new Intent(this, InputNumberActivity.class);
         startActivity(i);
     }
 
     public void OnClickChooseRandomString(View view) {
-        Intent i = new Intent(this,InputMovies.class);
+        Intent i = new Intent(this, InputMoviesActivity.class);
         startActivity(i);
     }
 

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    android:divider="@drawable/empty_tall_divider"
     android:layout_columnSpan="20"
     android:layout_margin="10dp"
     android:columnCount="3"
@@ -20,6 +23,10 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!--<Button
+        android:layout_width="match_partent>"
+        android:layout_height="match_parent"
+        android:text="@string/app_name"/>-->
     <Button
         android:id="@+id/buttonGenerateRandomNumber"
         android:layout_width="wrap_content"
@@ -33,6 +40,8 @@
         android:id="@+id/outputRandomNumber"
         android:layout_width="150dp"
         android:layout_height="30dp"
+        android:textSize="12dp"
+        android:textColor="@color/teal_200"
         android:layout_row="1"
         android:layout_column="1" />
 
@@ -49,6 +58,8 @@
         android:id="@+id/outputRandomString"
         android:layout_width="150dp"
         android:layout_height="30dp"
+        android:textSize="12dp"
+        android:textColor="@color/teal_200"
         android:layout_row="2"
         android:layout_column="1" />
 
@@ -71,4 +82,5 @@
         android:onClick="OnClickChooseRandomString"
         android:text="@string/buttonChooseRandomString" />
 
-</GridLayout>
+
+</LinearLayout>

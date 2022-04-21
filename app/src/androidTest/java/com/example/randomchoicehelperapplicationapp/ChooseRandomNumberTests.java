@@ -8,8 +8,8 @@ import static androidx.test.espresso.matcher.ViewMatchers.withId;
 
 import androidx.test.core.app.ActivityScenario;
 
-import com.example.randomchoicehelperapplicationapp.RandomClass.RandomChoice;
-import com.example.randomchoicehelperapplicationapp.RandomClass.RandomChoiceGenerator;
+import com.example.randomchoicehelperapplicationapp.randomclass.RandomChoice;
+import com.example.randomchoicehelperapplicationapp.randomclass.RandomChoiceGenerator;
 import com.example.shortcutEngine.Shortcut;
 import com.example.shortcutEngine.ShortcutGenerator;
 
