@@ -64,5 +64,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
+    public void OnClickStartActivityDB(View view) {
+        Intent i = new Intent(this, DatabaseActivity.class);
+        startActivity(i);
+    }
 }

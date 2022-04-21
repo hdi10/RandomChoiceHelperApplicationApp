@@ -83,4 +83,10 @@
         android:text="@string/buttonChooseRandomString" />
 
 
+    <Button
+        android:id="@+id/buttonStartDBActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnClickStartActivityDB"
+        android:text="@string/buttonStartDBActvity" />
 </LinearLayout>

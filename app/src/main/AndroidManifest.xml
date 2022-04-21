@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RandomChoiceHelperApplicationApp">
         <activity
+            android:name="com.example.NewWordGroupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DatabaseActivity"
+            android:exported="false" />
+        <activity
             android:name=".ChooseChoiceCountActivity"
             android:exported="false" />
         <activity

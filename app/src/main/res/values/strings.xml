@@ -18,4 +18,11 @@
     <string name="RandomNumberButton">go!</string>
     <string name="RandomStringButton">Let\'s go!</string>
     <string name="how_many_possible_choices_do_you_have">How many possible choices do you have?</string>
+    <string name="add_wordGroup">\"ADD WORDGROUP\"</string>
+
+    <string name="hint_word">Word...</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Word not saved because it is empty.</string>
+    <string name="buttonStartDBActvity">start DB Crud</string>
+
 </resources>
