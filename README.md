@@ -1,3 +1,2 @@
 # RandomChoiceHelperApplicationApp
-
-created on a sunday to decide something
+the name says it all
