@@ -25,8 +25,8 @@ public class RandomChoice implements RandomChoiceGenerator {
     @Override
     public int generateRandomInteger() {
         int leftLimit = 1;
-        int rightLimit = 999;
-        int dezimal = 10;
+        int rightLimit = 9;
+        int dezimal = 1;
         Random random = new Random();
 
         int randomLimitedInt = leftLimit + (int) (random.nextFloat() * (rightLimit-leftLimit+1));

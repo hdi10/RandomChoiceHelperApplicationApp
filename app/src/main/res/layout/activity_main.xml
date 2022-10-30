@@ -1,49 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:showDividers="middle"
-    android:divider="@drawable/empty_tall_divider"
     android:layout_columnSpan="20"
-    android:layout_margin="10dp"
+    android:layout_margin="@dimen/big_padding"
     android:columnCount="3"
+    android:divider="@drawable/empty_tall_divider"
+    android:orientation="vertical"
     android:rowCount="8"
 
+    android:showDividers="middle"
     tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <!--<Button
         android:layout_width="match_partent>"
         android:layout_height="match_parent"
         android:text="@string/app_name"/>-->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053" />
+
     <Button
         android:id="@+id/buttonGenerateRandomNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_row="1"
         android:layout_column="0"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
         android:onClick="OnClickGenerateRandomInteger"
-        android:text="@string/buttonGenerateRandomNumber" />
+        android:text="@string/buttonGenerateRandomNumber"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGenerateRandomString"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/outputRandomNumber"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
-        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="1"
         android:textColor="@color/teal_200"
-        android:layout_row="1"
-        android:layout_column="1" />
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonGenerateRandomNumber"
+        app:layout_constraintEnd_toStartOf="@+id/buttonGenerateRandomNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonGenerateRandomNumber" />
+
 
     <Button
         android:id="@+id/buttonGenerateRandomString"
@@ -51,17 +65,27 @@
         android:layout_height="wrap_content"
         android:layout_row="2"
         android:layout_column="0"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
         android:onClick="OnClickGenerateRandomString"
-        android:text="@string/buttonGenerateRandomString" />
+        android:text="@string/buttonGenerateRandomString"
+        app:layout_constraintBottom_toTopOf="@+id/buttonChooseRandomNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/buttonGenerateRandomNumber" />
 
     <TextView
         android:id="@+id/outputRandomString"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
-        android:textSize="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="1"
         android:textColor="@color/teal_200"
-        android:layout_row="2"
-        android:layout_column="1" />
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonGenerateRandomString"
+        app:layout_constraintEnd_toStartOf="@+id/buttonGenerateRandomString"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonGenerateRandomString" />
 
     <Button
         android:id="@+id/buttonChooseRandomNumber"
@@ -69,9 +93,12 @@
         android:layout_height="wrap_content"
         android:layout_row="3"
         android:layout_column="0"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
         android:onClick="OnClickChooseRandomNumber"
-        android:text="@string/buttonChooseRandomNumber" />
-
+        android:text="@string/buttonChooseRandomNumber"
+        app:layout_constraintBottom_toTopOf="@+id/buttonChooseRandomWord"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/buttonChooseRandomWord"
@@ -79,14 +106,20 @@
         android:layout_height="wrap_content"
         android:layout_row="5"
         android:layout_column="0"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
         android:onClick="OnClickChooseRandomString"
-        android:text="@string/buttonChooseRandomString" />
-
+        android:text="@string/buttonChooseRandomString"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStartDBActivity"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/buttonStartDBActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:onClick="OnClickStartActivityDB"
-        android:text="@string/buttonStartDBActvity" />
-</LinearLayout>
+        android:text="@string/buttonStartDBActvity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,8 +9,9 @@
 
     <EditText
         android:id="@+id/editNumber"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="24dp"
         android:hint="@string/firstNumber"
@@ -20,8 +21,9 @@
 
     <EditText
         android:id="@+id/editNumber2"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="24dp"
         android:hint="@string/secondNumber"
@@ -31,8 +33,9 @@
 
     <EditText
         android:id="@+id/editNumber3"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="24dp"
         android:hint="@string/thirdNumber"
@@ -42,8 +45,9 @@
 
     <EditText
         android:id="@+id/editNumber4"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="24dp"
         android:hint="@string/fourthNumber"
@@ -53,8 +57,8 @@
 
     <TextView
         android:id="@+id/resultNumber"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="250dp"
         android:hint="@string/Result"
