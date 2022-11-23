@@ -34,4 +34,7 @@
     <string name="Monday">Montag</string>
     <string name="Tuesday">Dienstag</string>
     <string name="Wednesday">Mittwoch</string>
+    <string name="TAB3">TAB 3</string>
+    <string name="TAB2">TAB 2</string>
+    <string name="TAB1">TAB 1</string>
 </resources>
