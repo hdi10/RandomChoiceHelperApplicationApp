@@ -2,21 +2,21 @@
     <item
         android:id="@+id/page_1"
         android:enabled="true"
-        android:icon="@menu/cloud"
+        android:icon="@drawable/cloud"
         android:title="@string/text_label_1"/>
     <item
         android:id="@+id/page_2"
         android:enabled="true"
-        android:icon="@menu/postiveChoice"
+        android:icon="@drawable/postivechoice"
         android:title="@string/text_label_2"/>
     <item
         android:id="@+id/page_3"
         android:enabled="true"
-        android:icon="@menu/randomGenerate"
+        android:icon="@drawable/randomgenerate"
         android:title="@string/text_label_3"/>
     <item
         android:id="@+id/page_4"
         android:enabled="true"
-        android:icon="@menu/stundenplan"
+        android:icon="@drawable/stundenplan"
         android:title="@string/text_label_4"/>
 </menu>

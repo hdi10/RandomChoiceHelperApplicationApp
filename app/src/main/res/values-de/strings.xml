@@ -17,11 +17,11 @@
     <string name="fourthNumber">vierte</string>
     <string name="Result">Hier\ ist das Ergebnis!</string>
     <string name="RandomNumberButton">Los geht\'s!</string>
-    <string name="RandomStringButton">Auf auf und davon!</string>
+    <string name="RandomStringButton">Auf auf und davon\!</string>
     <string name="how_many_possible_choices_do_you_have">Wie wievele Ideen hast du?</string>
     <string name="add_wordGroup">\"Fuege Arbeitsgruppe hinzu\"</string>
 
-    <string name="hint_word">Word...</string>
+    <string name="hint_word">Word…</string>
     <string name="button_save">speichern</string>
     <string name="empty_not_saved">Wort nicht gesichert, da leer</string>
     <string name="buttonStartDBActvity">starte DB Crud</string>
@@ -29,4 +29,7 @@
     <string name="text_label_2">WortAusX</string>
     <string name="text_label_3">ZahlX</string>
     <string name="text_label_4">ZahlAusX</string>
+    <string name="TabItem1">Monday</string>
+    <string name="Tuesday">Dienstag</string>
+    <string name="Wednesday">Mittwoch</string>
 </resources>

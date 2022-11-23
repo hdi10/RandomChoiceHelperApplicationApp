@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         TextView textViewInit2 = (TextView) findViewById(R.id.outputRandomString);
         textViewInit2.setText(R.string.outputRandomString);
 
-
+        
 
     }
 
