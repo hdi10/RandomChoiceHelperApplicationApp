@@ -7,12 +7,12 @@
         <deviceKey>
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="C:\Users\Dastekin\.android\avd\Pixel_3_API_30_h.avd" />
+            <value value="$USER_HOME$/.android/avd/Samsung_Galaxy_S20_Ultra_API_30.avd" />
           </Key>
         </deviceKey>
       </Target>
     </targetSelectedWithDropDown>
-    <timeTargetWasSelectedWithDropDown value="2022-11-23T03:53:00.739201400Z" />
+    <timeTargetWasSelectedWithDropDown value="2022-11-23T05:03:09.629526Z" />
     <targetsSelectedWithDialog>
       <Target>
         <type value="QUICK_BOOT_TARGET" />
