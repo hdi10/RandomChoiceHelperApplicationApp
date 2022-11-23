@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void OnClickStartActivityDB(View view) {
-        Intent i = new Intent(this, DatabaseActivity.class);
+        Intent i = new Intent(this, FindTheBestChoice.class);
         startActivity(i);
     }
 }

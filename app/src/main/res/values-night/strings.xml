@@ -14,11 +14,11 @@
     <string name="secondNumber">enter second number</string>
     <string name="thirdNumber">enter third number</string>
     <string name="fourthNumber">enter fourth number</string>
-    <string name="Result">Here\\\'s the result!</string>
-    <string name="RandomNumberButton">go\!</string>
-    <string name="RandomStringButton">Let\\\'s go!</string>
+    <string name="Result">Heres the result!</string>
+    <string name="RandomNumberButton">go!</string>
+    <string name="RandomStringButton">Lets go!</string>
     <string name="how_many_possible_choices_do_you_have">How many possible choices do you have?</string>
-    <string name="add_wordGroup">\"ADD WORDGROUP\"</string>
+    <string name="add_wordGroup">ADD WORDGROUP</string>
 
     <string name="hint_word">Word…</string>
     <string name="button_save">Save</string>
@@ -29,6 +29,7 @@
     <string name="text_label_3">NumberX</string>
     <string name="text_label_4">NumberOutOfX</string>
     <string name="TabItem1">Monday</string>
+    <string name="Monday">Montag</string>
     <string name="Tuesday">Dienstag</string>
     <string name="Wednesday">Mittwoch</string>
 
