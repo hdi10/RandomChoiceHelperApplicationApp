@@ -24,5 +24,9 @@
     <string name="button_save">Save</string>
     <string name="empty_not_saved">Word not saved because it is empty.</string>
     <string name="buttonStartDBActvity">start DB Crud</string>
+    <string name="text_label_1">wortX</string>
+    <string name="text_label_2">WortAusX</string>
+    <string name="text_label_3">NumberX</string>
+    <string name="text_label_4">NumberOutOfX</string>
 
 </resources>

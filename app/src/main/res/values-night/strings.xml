@@ -2,4 +2,8 @@
 <resources>
     <string name="how_many_possible_choices_do_you_have">How many possible choices do you have?</string>
     <string name="add_wordGroup">\"ADD WORDGROUP\"</string>
+    <string name="text_label_1">wortX</string>
+    <string name="text_label_2">WortAusX</string>
+    <string name="text_label_3">NumberX</string>
+    <string name="text_label_4">NumberOutOfX</string>
 </resources>
