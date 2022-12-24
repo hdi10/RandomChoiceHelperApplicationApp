@@ -1,6 +1,7 @@
 package com.example.randomchoicehelperapplicationapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.DialogFragment;
 
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +12,9 @@ import android.widget.TextView;
 import com.example.randomchoicehelperapplicationapp.randomclass.RandomChoice;
 import com.example.randomchoicehelperapplicationapp.randomclass.RandomChoiceGenerator;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class InputNumberActivity extends AppCompatActivity {
 
     @Override
@@ -19,6 +23,10 @@ public class InputNumberActivity extends AppCompatActivity {
         setContentView(R.layout.activity_input_number);
 
         int[] numbers = new int[4];
+
+        List newList = new ArrayList();
+
+
 
         EditText field1 = (EditText) findViewById(R.id.editNumber);
         EditText field2 = (EditText) findViewById(R.id.editNumber2);
