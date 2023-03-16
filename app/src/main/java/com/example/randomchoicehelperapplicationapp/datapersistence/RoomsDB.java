@@ -2,25 +2,29 @@ package com.example.randomchoicehelperapplicationapp.datapersistence;
 
 import android.content.Context;
 
+import androidx.annotation.BoolRes;
 import androidx.annotation.NonNull;
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
+import com.example.randomchoicehelperapplicationapp.book.Book;
 import com.example.randomchoicehelperapplicationapp.model.wordgroup.WordGroup;
 import com.example.randomchoicehelperapplicationapp.model.wordgroup.WordGroupDao;
+import com.example.randomchoicehelperapplicationapp.services.BookDao;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-@Database(entities = WordGroup.class, version = 1, exportSchema = false)
+@Database (entities = {Book.class,WordGroup.class}, version = 1, exportSchema = false)
 public abstract class RoomsDB extends RoomDatabase {
     private static final int NUMBER_OF_THREADS = 8;
     public static Executor databaseWriteExecutor = Executors.newFixedThreadPool(NUMBER_OF_THREADS);
 
     public abstract WordGroupDao wordGroupDao();
+    public abstract BookDao bookDao();
 
     private static volatile RoomsDB INSTANCE;
 
@@ -57,13 +61,13 @@ public abstract class RoomsDB extends RoomDatabase {
             databaseWriteExecutor.execute(() -> {
                 // Populate the database in the background.
                 // If you want to start with more words, just add them.
-                WordGroupDao dao = INSTANCE.wordGroupDao();
+                BookDao dao = INSTANCE.bookDao();
                 dao.deleteAll();
 
-                WordGroup wordGroup = new WordGroup("Hello");
-                dao.insert(wordGroup);
-                wordGroup = new WordGroup("World");
-                dao.insert(wordGroup);
+                Book book = new Book();
+                dao.insert(book);
+                book = new Book();
+                dao.insert(book);
             });
         }
     };}
