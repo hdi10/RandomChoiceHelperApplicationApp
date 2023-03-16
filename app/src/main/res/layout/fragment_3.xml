@@ -6,12 +6,91 @@
     tools:context=".Fragment3">
 
     <!-- TODO: Update blank fragment3 layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/Wednesday"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:textSize="40dp"/>
+        tools:context=".InputNumberActivity">
+
+
+        <EditText
+            android:id="@+id/editNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="24dp"
+            android:hint="@string/firstNumber"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editNumber2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="24dp"
+            android:hint="@string/secondNumber"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editNumber" />
+
+        <EditText
+            android:id="@+id/editNumber3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="24dp"
+            android:hint="@string/thirdNumber"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editNumber2" />
+
+        <EditText
+            android:id="@+id/editNumber4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="24dp"
+            android:hint="@string/fourthNumber"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editNumber3" />
+
+        <TextView
+            android:id="@+id/resultNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="250dp"
+            android:hint="@string/Result"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editNumber4" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:hint="@string/RandomNumberButton"
+            android:textColorHint="@color/white"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:id="@+id/goRandomNumber"
+            android:onClick="OnClickGoChooseRandomNumber"
+            app:layout_constraintBottom_toTopOf="@+id/resultNumber"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editNumber4" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
