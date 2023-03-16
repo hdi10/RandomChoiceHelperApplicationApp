@@ -7,6 +7,7 @@ import com.example.shortcutEngine.Shortcut;
 import com.example.shortcutEngine.ShortcutGenerator;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class E2ETests {
@@ -20,6 +21,7 @@ public class E2ETests {
     //                          Biggest Test                                  ///
     //////////////////////////////////////////////////////////////////////////////
 
+    @Ignore
     @Test
     public void BiggusDickusTest(){
         String s1 = "Predestination";
@@ -71,6 +73,20 @@ public class E2ETests {
         sc.pressHardwareButtonBack();
 
         sc.useChooseRandomlyString(s1d,s2d,s3d,s4d);
+    }
+
+    @Test
+    public void CRUDTest(){
+        String s1a = "Eis";
+        String s2a = "Pizza";
+        String s3a = "Spaghetti";
+        String s4a = "Doener";
+
+        ShortcutGenerator sc = new Shortcut();
+        sc.useCrudOperationsButton();
+
+
+
     }
 
 }

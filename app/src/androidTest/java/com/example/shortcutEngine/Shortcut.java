@@ -176,4 +176,25 @@ public class Shortcut implements ShortcutGenerator{
     public void pressHardwareButtonBack(){
         onView(isRoot()).perform(pressBack());
     }
+
+    @Override
+    public void useCrudOperationsButton() {
+        String s1a = "Eis";
+        String s2a = "Pizza";
+        String s3a = "Spaghetti";
+        String s4a = "Doener";
+
+        onView(withId(R.id.buttonStartDBActivity)).perform(click());
+        onView(withId(R.id.edit_word)).perform(click());
+        onView(withId(R.id.edit_word))
+                .perform(typeText(String.valueOf(s1a)), closeSoftKeyboard());
+        onView(withId(R.id.fab)).perform(click());
+        onView(withId(R.id.edit_word))
+                .perform(typeText(String.valueOf(s1a)), closeSoftKeyboard());
+
+        pressHardwareButtonBack();
+        onView(withId(R.id.edit_word))
+                .perform(typeText(String.valueOf(s2a)), closeSoftKeyboard());
+
+    }
 }

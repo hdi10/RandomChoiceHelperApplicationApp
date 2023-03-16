@@ -17,4 +17,6 @@ public interface ShortcutGenerator {
     void useChooseRandomNumber(int number1, int number2, int number3, int number4);
 
     void pressHardwareButtonBack();
+
+    void useCrudOperationsButton();
 }
