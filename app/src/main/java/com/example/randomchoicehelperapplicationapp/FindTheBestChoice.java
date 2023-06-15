@@ -28,9 +28,9 @@ public class FindTheBestChoice extends AppCompatActivity {
         Log.d("","huier");
 
         VPAdapter vpAdapter = new VPAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
-        vpAdapter.addFragment(new Fragment1(),"Mondays*Produktgruppe1**");
-        vpAdapter.addFragment(new Fragment2(),"Tuesdays*Produktgruppe2**");
-        vpAdapter.addFragment(new Fragment3(),"Wednesdays*Produktgrupp3**");
+        vpAdapter.addFragment(new Fragment1(),"BCKLG");
+        vpAdapter.addFragment(new Fragment2(),"In Progress");
+        vpAdapter.addFragment(new Fragment3(),"Done");
         viewPager.setAdapter(vpAdapter);
 
     }
